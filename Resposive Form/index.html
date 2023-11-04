@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        overflow: hidden;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(39, 224, 163);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        position: relative;
+        height: 350px;
+        width: 350px;
+        min-width: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+
+      .heading {
+        background-color: rgb(19, 145, 103);
+        height: 80px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 0 0;
+      }
+      .heading h2 {
+        font-size: 30px;
+      }
+
+      .field-part {
+        margin: 20px 20px 0 20px;
+        background-color: red;
+        width: 90%;
+        display: flex;
+      }
+      .green-part {
+        height: 40px;
+        background-color: rgb(19, 145, 103);
+        width: 20%;
+        font-size: 24px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .field-part input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid rgb(25, 92, 70);
+        outline: none;
+      }
+
+      .field-part input[type="text"]:focus {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid rgb(121, 252, 208);
+        box-shadow: 0 0 5px rgb(121, 252, 208);
+      }
+      .green-text {
+        display: block;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        color: rgb(19, 145, 103);
+        font-weight: 500;
+        padding: 6px 20px;
+      }
+      .sign {
+        display: inline;
+        color: rgb(19, 145, 103);
+        font-size: 1rem;
+        letter-spacing: 1;
+      }
+      .green-text:hover,
+      .sign:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      button {
+        display: block;
+        height: 50px;
+        margin: 10px 20px auto;
+        width: 90%;
+        background-color: rgb(19, 145, 103);
+        color: white;
+        padding: 10px 70px;
+        border-radius: 10px;
+        border: 1px solid rgb(19, 145, 103);
+        cursor: pointer;
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+
+      .text2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        font-size: 1rem;
+        padding: 6px 20px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h2>Login Form</h2>
+      </div>
+      <form action="">
+        <div class="field-part">
+          <div class="green-part">
+            <i class="fa fa-user"></i>
+          </div>
+          <input type="text" required placeholder="Email or Phone" />
+        </div>
+
+        <div class="field-part">
+          <div class="green-part">
+            <i class="fa fa-lock"></i>
+          </div>
+          <input type="text" required placeholder="Password" />
+        </div>
+        <span class="green-text">Forgot password?</span>
+        <button>Login</button>
+
+        <div class="text2">
+          Not a member? <span class="sign">Sign up now</span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
